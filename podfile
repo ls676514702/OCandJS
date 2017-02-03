@@ -1,0 +1,3 @@
+target ‘OC与JS交互’ do
+pod 'SDWebImage', '~> 4.0.0-beta2'
+end

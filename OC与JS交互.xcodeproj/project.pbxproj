@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BE1EBE7DA57520EA26D3027 /* libPods-OC与JS交互.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5151124AD8CC180E7DF7519 /* libPods-OC与JS交互.a */; };
 		A189043E1E40A956006D632D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A189043D1E40A956006D632D /* main.m */; };
 		A18904411E40A956006D632D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A18904401E40A956006D632D /* AppDelegate.m */; };
 		A18904441E40A956006D632D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18904431E40A956006D632D /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760764EB242452CACD4190BB /* Pods-OC与JS交互.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC与JS交互.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC与JS交互/Pods-OC与JS交互.debug.xcconfig"; sourceTree = "<group>"; };
 		A18904391E40A956006D632D /* OC与JS交互.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC与JS交互.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A189043D1E40A956006D632D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A189043F1E40A956006D632D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		A18904481E40A956006D632D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A189044B1E40A956006D632D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A189044D1E40A956006D632D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5151124AD8CC180E7DF7519 /* libPods-OC与JS交互.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC与JS交互.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7371AA19BAFF7EE4D7C58B0 /* Pods-OC与JS交互.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC与JS交互.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC与JS交互/Pods-OC与JS交互.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE1EBE7DA57520EA26D3027 /* libPods-OC与JS交互.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C72FD6ED29329161DB7D879 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5151124AD8CC180E7DF7519 /* libPods-OC与JS交互.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A18904301E40A956006D632D = {
 			isa = PBXGroup;
 			children = (
 				A189043B1E40A956006D632D /* OC与JS交互 */,
 				A189043A1E40A956006D632D /* Products */,
+				C203B3EDADC0B3C5DE4913A7 /* Pods */,
+				3C72FD6ED29329161DB7D879 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C203B3EDADC0B3C5DE4913A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				760764EB242452CACD4190BB /* Pods-OC与JS交互.debug.xcconfig */,
+				A7371AA19BAFF7EE4D7C58B0 /* Pods-OC与JS交互.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A18904501E40A956006D632D /* Build configuration list for PBXNativeTarget "OC与JS交互" */;
 			buildPhases = (
+				746AB02CB0D5BB22EB1252CA /* [CP] Check Pods Manifest.lock */,
 				A18904351E40A956006D632D /* Sources */,
 				A18904361E40A956006D632D /* Frameworks */,
 				A18904371E40A956006D632D /* Resources */,
+				F035E9AEF72E95A6DE731254 /* [CP] Embed Pods Frameworks */,
+				EE251DD8CCE0BC0D4ED14129 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		746AB02CB0D5BB22EB1252CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE251DD8CCE0BC0D4ED14129 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC与JS交互/Pods-OC与JS交互-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F035E9AEF72E95A6DE731254 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC与JS交互/Pods-OC与JS交互-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A18904351E40A956006D632D /* Sources */ = {
@@ -260,8 +335,10 @@
 		};
 		A18904511E40A956006D632D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760764EB242452CACD4190BB /* Pods-OC与JS交互.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "OC与JS交互/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ls.personal.OC-JS--";
@@ -271,8 +348,10 @@
 		};
 		A18904521E40A956006D632D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7371AA19BAFF7EE4D7C58B0 /* Pods-OC与JS交互.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "OC与JS交互/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ls.personal.OC-JS--";
@@ -299,6 +378,7 @@
 				A18904521E40A956006D632D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
